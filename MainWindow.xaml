@@ -1,0 +1,29 @@
+﻿<Window x:Class="WeatherApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OpenWeatherApp" Height="350" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="City:"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="5" x:Name="CityTextBox"/>
+        <Button Grid.Row="1" Grid.Column="1" Margin="5" Content="Get Weather" Click="GetWeatherButton_Click"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Temperature:"/>
+        <Label Grid.Row="2" Grid.Column="1" Margin="5" x:Name="TemperatureLabel"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Humidity:"/>
+        <Label Grid.Row="3" Grid.Column="1" Margin="5" x:Name="HumidityLabel"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Wind Speed:"/>
+        <Label Grid.Row="4" Grid.Column="1" Margin="5" x:Name="WindSpeedLabel"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Description:" Margin="0,31,0,-31"/>
+        <Label Grid.Row="5" Grid.Column="1" Margin="5" x:Name="DescriptionLabel"/>
+    </Grid>
+</Window>
